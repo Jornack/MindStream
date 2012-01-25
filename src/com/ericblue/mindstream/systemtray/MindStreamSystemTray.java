@@ -1,4 +1,3 @@
-
 package com.ericblue.mindstream.systemtray;
 
 import java.awt.AWTException;
@@ -288,8 +287,8 @@ public class MindStreamSystemTray {
 
 							// HEADER
 							try {
-								writer.append("TIMESTAMP,POOR_SIGNAL_LEVEL,ATTENTION,MEDITATION");
-								writer.append("DELTA,THETA,LOW_ALPHA,HIGH_ALPHA,LOW_BETA,HIGH_BETA");
+								writer.append("TIMESTAMP,POOR_SIGNAL_LEVEL,ATTENTION,MEDITATION,");
+								writer.append("DELTA,THETA,LOW_ALPHA,HIGH_ALPHA,LOW_BETA,HIGH_BETA,");
 								writer.append("LOW_GAMMA,HIGH_GAMA\n");
 							} catch (IOException e2) {
 								trayIcon.displayMessage("Write Error", e2.getMessage(), TrayIcon.MessageType.ERROR);
